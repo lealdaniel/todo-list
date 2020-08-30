@@ -1,0 +1,19 @@
+.itemContainer  {
+  padding: 4px;
+  border-radius: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.itemContainer .itemContent {
+  outline: 0;
+  color: #fff;
+  font: 400 1.2rem Ubuntu;
+  line-height: 1.5;
+}
+
+.itemContainer:focus-within [contenteditable]:empty:before {
+  content: attr(placeholder);
+  display: block;
+  opacity: 0.5;
+  color: #fff;
+}
